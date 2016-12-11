@@ -1,0 +1,27 @@
+{
+  "name": "SIA Commit Pattern",
+  "description": "Extensão para auxiliar no padrão de commit do SIA.",
+  "version": "0.0.0.3",
+  "permissions": [
+    "activeTab"
+  ],
+  
+  "browser_action": {
+    "default_title": "Commit Pattern",
+    "default_icon": "icon-tortoise-sia-48x48.png"
+  },
+
+  "icons": {
+      "48" : "icon-tortoise-sia-48x48.png",
+      "128" : "icon-tortoise-sia-128x128.png"
+  },
+
+  "manifest_version": 2,
+
+  "content_scripts": [
+  {
+    "matches": ["https://jiracloud.cit.com.br/*"],    
+    "js": ["jquery-3.1.1.min.js", "background.js"],
+    "run_at" : "document_end"
+  }]
+}
