@@ -20,8 +20,9 @@
 
   "content_scripts": [
   {
-    "matches": ["https://jiracloud.cit.com.br/*"],    
-    "js": ["jquery-3.1.1.min.js", "background.js"],
+    "matches": ["https://jiracloud.cit.com.br/*","http://acacia-jenkins.cit.com.br/*"],    
+    "js": ["jquery-3.1.1.min.js", "background.js", "jenkins.js"],
     "run_at" : "document_end"
-  }]
+  }
+  ]
 }
