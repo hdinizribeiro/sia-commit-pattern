@@ -1,7 +1,7 @@
 {
   "name": "SIA Commit Pattern",
   "description": "Extensão para auxiliar no padrão de commit do SIA.",
-  "version": "0.0.1.0",
+  "version": "0.0.1.1",
   "permissions": [
     "activeTab"
   ],
