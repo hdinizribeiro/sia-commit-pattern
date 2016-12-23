@@ -1,7 +1,7 @@
 {
   "name": "SIA Commit Pattern",
   "description": "Extensão para auxiliar no padrão de commit do SIA.",
-  "version": "0.0.0.3",
+  "version": "0.0.1.0",
   "permissions": [
     "activeTab"
   ],
@@ -20,8 +20,13 @@
 
   "content_scripts": [
   {
-    "matches": ["https://jiracloud.cit.com.br/*","http://acacia-jenkins.cit.com.br/*"],    
-    "js": ["jquery-3.1.1.min.js", "background.js", "jenkins.js"],
+    "matches": ["https://jiracloud.cit.com.br/*"],    
+    "js": ["jquery-3.1.1.min.js", "background.js"],
+    "run_at" : "document_end"
+  },
+  {
+    "matches": ["http://acacia-jenkins.cit.com.br/*"],    
+    "js": ["jquery-3.1.1.min.js", "jenkins.js"],
     "run_at" : "document_end"
   }
   ]
